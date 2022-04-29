@@ -1,0 +1,30 @@
+{
+    "name": "crab",
+    "displayName": "Crab",
+    "description": "Simple language support for the crab programming language.",
+    "version": "0.0.1",
+    "private": true,
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "crab",
+            "aliases": ["Crab", "crab"],
+            "extensions": [".cb"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "crab",
+            "scopeName": "source.crab",
+            "path": "./syntaxes/crab.tmLanguage.json"
+        }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Bananenpro/vscode-crab.git"
+    }
+}
